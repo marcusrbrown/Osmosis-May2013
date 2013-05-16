@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=1024, user-scalable=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="description" content="A presentation given for Game CoLab Osmosis, May 16th 2013">
+  <meta name="author" content="Marcus R. Brown">
 
-	<title>Your deck.js Presentation</title>
-	
+  <title>Building a Strong Development Culture</title>
+
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
 	
@@ -18,29 +20,127 @@
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
 
-	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="themes/style/web-2.0.css">
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <!--link rel="stylesheet" href="themes/style/web-2.0.css"-->
+  <link rel="stylesheet" href="themes/style/swiss.css">
+  <!--link rel="stylesheet" href="themes/style/mnml.css"-->
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
-	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
-	
-	<!-- Required Modernizr file -->
-	<script src="modernizr.custom.js"></script>
+	<!--link rel="stylesheet" href="themes/transition/horizontal-slide.css"-->
+  <link rel="stylesheet" href="themes/transition/fade.css">
+
+  <style>
+    .presentation .deck-container {
+      width: auto;
+      max-width: 864px;
+      margin: 16px auto 24px auto;
+      min-height: 560px;
+      font-size: 16px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    body > header {
+      width: 100%;
+      min-height: 32px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body > header > nav {
+      margin: 0 auto;
+      width: 960px;
+    }
+
+    body > header > nav > h1 {
+      float: left;
+    }
+
+    body > header > nav > h1 > a {
+      text-decoration: none;
+    }
+
+    body > header > nav > ul {
+      float: right;
+    }
+
+    body > footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    body > footer > p {
+      float: right;
+      margin-right: 10px;
+      padding: 0 4px;
+    }
+  </style>
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
 </head>
-<body class="deck-container">
+<body class="presentation">
+  <header>
+  <nav>
+    <h1><a href="http://gamecolab.org/">Game CoLab</a></h1>
+    <ul>
+      <li><strong>Osmosis - May 16th, 2013</strong></li>
+    </ul>
+  </nav>
+  </header>
 
+  <article class="deck-container">
 <!-- Begin slides. Just make elements with a class of slide. -->
-
-<section class="slide">
-	<h1>Slide</h1>
+<section class="slide" id="title">
+  <h1>Building a Strong Development Culture</h1>
 </section>
 
-<section class="slide">
-	<h1>Content</h1>
+<section class="slide" id="introduction-title">
+  <h1>Introduction</h1>
 </section>
 
-<section class="slide">
-	<h1>Here</h1>
+<section class="slide" id="introduction-1">
+  <h2>Introduction</h2>
+  <div class="slide">
+    <h3>Marcus R. Brown</h3>
+    <p>Co-founder of <a href="http://precision-mojo.com">Precision Mojo</a>, working out of <a href="http://gamecolab.org">Game CoLab</a>.</p>
+  </div>
+  <div class="slide">
+    <h3>Game Programmer</h3>
+    <ul>
+      <li>9+ years professional</li>
+      <li>4+ years homebrew (pre-indie?)</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h3>Seen Some Things... Would Recommend It</h3>
+    <ul>
+      <li>Worked at Budcat, Big Bang Entertainment, and <a href="http://2xlgames.com">2XL Games</a></li>
+      <li>~25 teams/projects, 18 shipped</li>
+      <li>Second try at going independent, determined not to fail!</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" id="introduction-2">
+  <h2>Introduction</h2>
+  <h3>Building a Strong Development Culture</h3>
+</section>
+
+<section class="slide" id="spirs-title">
+  <h1>How <i>Not</i> to be the Smartest Person in the Room</h1>
+</section>
+
+<section class="slide" id="teamworks-title">
+  <h1>Team Works: Build, Fuse, Conquer</h1>
 </section>
 
 <!-- End slides. -->
@@ -72,6 +172,11 @@
 
 <!-- End extension snippets. -->
 
+</article>
+
+<footer>
+  <p>Source on <a href="http://github.com/igetgames/Osmosis-May2013">GitHub</a></p>.
+</footer>
 
 <!-- Required JS files. -->
 <script src="jquery-1.7.2.min.js"></script>
